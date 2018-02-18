@@ -1,0 +1,35 @@
+{
+  "name": "openstash",
+  "description": "openstash project",
+  "main": "server.js",
+  "authors": [
+    "Dan Gluck"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/dg1371/openStash",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "angular-ui-router": "latest",
+    "angular-route": "^1.6.4",
+    "angular-translate-loader-url": "^2.15.1",
+    "ngstorage": "^0.3.11",
+    "angular-bootstrap": "^2.5.0",
+    "angular-resource": "^1.6.4",
+    "bootstrap": "~3.3.6",
+    "clipboard": "^1.7.1",
+    "ngclipboard": "^1.1.1",
+    "lodash": "^4.17.4",
+    "angular-cookies": "^1.6.4",
+    "angular-translate": "^2.15.1",
+    "angular-filter": "^0.5.16"
+  }
+}

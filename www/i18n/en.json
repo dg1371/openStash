@@ -1,0 +1,560 @@
+{
+  "GENERAL": {
+    "ID": "id",
+    "ADD": "Add",
+    "UPDATE": "Update",
+    "DELETE": "Delete",
+    "SUBMIT": "Submit",
+    "SAVE": "Save",
+    "CANCEL": "Cancel",
+    "LOGOUT": "Logout",
+    "SETTINGS": "Settings",
+    "START": "Create",
+    "CREATED": "Created",
+    "UPDATED": "Updated",
+    "OEE": "OEE",
+    "CONFIRM": "Confirm",
+    "CLOSE": "Close",
+    "SKIP": "Skip Records",
+    "TAKE": "Number of records returned",
+    "OBJECT": "object"
+  },
+  "ALERT": {
+    "NAME": "Name",
+    "DESCRIPTION": "Description",
+    "TABLE": "Table",
+    "EXPRESSION": "Expression",
+    "THRESHOLD": "Threshold",
+    "RECIPIENTS": "Recipients",
+    "ACTIVE": "Active"
+  },
+  "ALERT_INDEX": {
+    "TITLE": "Alert Admin"
+  },
+  "ALERT_FORM": {
+    "TITLE": "Alert Configuration"
+  },
+  "ALERT_LOG_INDEX": {
+    "TITLE": "Alert History"
+  },
+  "ALERT_LOG": {
+    "TRIGGERED": "Triggered",
+    "DEFERRED_UNTIL": "Deferred Until",
+    "NOTIFIED": "Notified",
+    "CLEARED": "Cleared"
+  },
+  "AUDIT_LOG": {
+    "ENTITY_NAME": "Audit Log",
+    "CREATED_AT": "Change Date",
+    "TABLE": "Table",
+    "FIELD": "Field",
+    "CHANGE_TYPE": "Change Type",
+    "ORIGINAL_VALUE": "Original Value",
+    "NEW_VALUE": "New Value",
+    "USER": "User"
+  },
+  "AUDIT_LOG_FORM": {
+    "TITLE": "Audit Log"
+  },
+  "I18N_FORM": {
+    "TITLE": "Languages",
+    "GENERAL_PANEL_TITLE": "General Settings",
+    "NAME_REQUIRED": "Name Required"
+  },
+  "I18N": {
+    "ENTITY_NAME": "Language",
+    "NAME": "Language Name",
+    "CODE": "Language Code"
+  },
+  "LOGIN_FORM": {
+    "LOGIN_TITLE": "Please Login",
+    "LOGIN_FAILED": "Invalid Username or Password.",
+    "SIGN_IN": "Sign in",
+    "USERNAME_REQUIRED": "Enter your user name",
+    "PASSWORD_REQUIRED": "Enter your password",
+    "USERNAME_PLACEHOLDER": "Username",
+    "PASSWORD_PLACEHOLDER": "Password"
+  },
+  "USER_FORM": {
+    "COPY_CLIPBOARD": "Copy to Clipboard",
+    "TITLE": "Users",
+    "NEW_KEY": "Generate New API-Key",
+    "CURRENT_KEY": "API Key",
+    "KEY_TAB": "API Keys",
+    "GENERAL_TAB": "General",
+    "SECURITY_TAB": "Security",
+    "CELL_TAB": "Work Cell",
+    "SECURITY_LABEL": "Assigned Security Groups",
+    "CELL_LABEL": "Assigned Work Cells",
+    "PASSWORD_CONFIRM": "Confirm Password"
+  },
+  "USER": {
+    "ENTITY_NAME": "User",
+    "USERID": "User ID",
+    "NAME": "Name",
+    "FIRST_NAME": "First Name",
+    "LAST_NAME": "Last Name",
+    "EMPLOYEE_ID": "Employee ID",
+    "PASSWORD": "Password",
+    "ACTIVE": "Active",
+    "EMAIL": "Email Address"
+  },
+  "ME_FORM": {
+    "TITLE": "Account Information"
+  },
+  "MENU": {
+    "LOCATION": "Location",
+    "REPORTING": "Reporting",
+    "SECURITY": "Security",
+    "PRODUCTION": "Production",
+    "EVENTS": "Events",
+    "TOOLS": "Tools"
+  },
+  "SCOREBOARD_FORM": {
+    "TITLE": "Scoreboard",
+    "CONFIGURATION": "Configuration"
+  },
+  "SCOREBOARD": {
+    "ENTITY_NAME": "Scoreboard",
+    "CODE": "Code",
+    "NAME": "Name"
+  },
+  "SCOREBOARD_DETAIL": {
+    "ENTITY_NAME": "Detail",
+    "LABEL": "Metric Label",
+    "METRIC": "Metric",
+    "ORDER": "Display Order"
+  },
+  "COMPANY": {
+    "ENTITY_NAME": "Company",
+    "NAME": "Company Name",
+    "ADDRESS1": "Address",
+    "ADDRESS2": "Address 2",
+    "CITY": "City",
+    "STATE": "State",
+    "POSTAL_CODE": "Zip",
+    "COUNTRY": "Country",
+    "CALENDAR": "Calendar",
+    "OEE_TARGET": "OEE Target",
+    "OEE_WARNING": "OEE Warning",
+    "QUALITY_TARGET": "Quality Target",
+    "QUALITY_WARNING": "Quality Warning",
+    "AVAIL_TARGET": "Availability Target",
+    "AVAIL_WARNING": "Availability Warning",
+    "PERFORM_TARGET": "Performance Target",
+    "PERFORM_WARNING": "Performance Warning",
+    "PASSWORD_WARNING": "Password Warning",
+    "LANGUAGE": "Language",
+    "STRONG_PASSWORD": "Enable Strong Passwords",
+    "ALLOW_DEVICE_TIER": "Allow Device Tier",
+    "ALLOW_MANUAL_CHANGE_OVER": "Allow Manual Change Over",
+    "SHOW_ALL_SHIFTS": "Show All Shifts"
+  },
+  "COMPANY_FORM": {
+    "TITLE": "Company",
+    "GENERAL_PANEL_TITLE": "Company Information",
+    "METRICS_PANEL_TITLE": "Metric Settings",
+    "METRICS_TAB": "Metrics",
+    "GENERAL_TAB": "General",
+    "SETTINGS_TAB": "Settings",
+    "SETTINGS_PANEL_TITLE": "Settings",
+    "OEE_TARGET_RANGE": "OEE Target must be between 0 and 100",
+    "OEE_WARNING_RANGE": "OEE Warning must be between 0 and the OEE Target",
+    "AVAIL_TARGET_RANGE": "Availability Target must be between 0 and 100",
+    "AVAIL_WARNING_RANGE": "Availability Warning must be between 0 and the Availability Target",
+    "PERFORM_TARGET_RANGE": "Performance Target must be between 0 and 100",
+    "PERFORM_WARNING_RANGE": "Performance Warning must be between 0 and the Performance Target",
+    "QUALITY_TARGET_RANGE": "Quality Target must be between 0 and 100",
+    "QUALITY_WARNING_RANGE": "Quality Warning must be between 0 and the Quality Target"
+  },
+  "GROUP_FORM": {
+    "TITLE": "Groups",
+    "GENERAL_PANEL_TITLE": "Group Information",
+    "admin": "Administrative Rights",
+    "analytics-admin": "Analytics Administration",
+    "report-admin": "Reporting Admin Rights",
+    "production": "Production Reporting",
+    "analytics": "Analytics Viewer"
+  },
+  "GROUP": {
+    "ENTITY_NAME": "Group",
+    "NAME": "Group Name",
+    "ACTIVE": "Active"
+  },
+  "PART_OP": {
+    "TITLE": "Part Operations",
+    "RAW_CYCLE_TIME": "Raw Cycle Time",
+    "CYCLE_TIME_UNIT": "Cycle Time Unit",
+    "PART_NAME": "Part"
+  },
+  "FACILITY": {
+    "ENTITY_NAME": "Facility",
+    "NAME": "Name",
+    "CODE": "Code",
+    "OEE_TARGET": "OEE Target",
+    "OEE_WARNING": "OEE Warning",
+    "QUALITY_TARGET": "Quality Target",
+    "QUALITY_WARNING": "Quality Warning",
+    "AVAIL_TARGET": "Availability Target",
+    "AVAIL_WARNING": "Availability Warning",
+    "PERFORM_TARGET": "Performance Target",
+    "PERFORM_WARNING": "Performance Warning",
+    "CALENDAR": "Calendar",
+    "CREATED": "Created",
+    "UPDATED": "Updated",
+    "TIMEZONE": "Timezone",
+    "OEECALCULATE": "Calculate OEE using 0s or nulls?",
+    "ACTIVE": "Active"
+  },
+  "FACILITY_FORM": {
+    "TITLE": "Facilities",
+    "GENERAL_PANEL_TITLE": "Facility Information",
+    "SETTINGS_PANEL_TITLE": "Settings",
+    "SCRAP_LABEL": "Scrap Codes",
+    "DOWNTIME_LABEL": "Downtime Codes",
+    "METRICS_PANEL_TITLE": "Metric Settings",
+    "METRICS_TAB": "Metrics",
+    "GENERAL_TAB": "General",
+    "OEE_TARGET_RANGE": "OEE Target must be between 0 and 100",
+    "OEE_WARNING_RANGE": "OEE Warning must be between 0 and the OEE Target",
+    "AVAIL_TARGET_RANGE": "Availability Target must be between 0 and 100",
+    "AVAIL_WARNING_RANGE": "Availability Warning must be between 0 and the Availability Target",
+    "PERFORM_TARGET_RANGE": "Performance Target must be between 0 and 100",
+    "PERFORM_WARNING_RANGE": "Performance Warning must be between 0 and the Performance Target",
+    "QUALITY_TARGET_RANGE": "Quality Target must be between 0 and 100",
+    "QUALITY_WARNING_RANGE": "Quality Warning must be between 0 and the Quality Target"
+  },
+  "CUSTOM_CALC": {
+    "LABEL": "Label",
+    "NOTES": "Notes",
+    "FIELD_NAME": "Field Name",
+    "DATA_SOURCE": "Data Source",
+    "FORMULA": "Formula"
+  },
+  "CUSTOM_CALC_FORM": {
+    "TITLE": "Custom Calculation Admin",
+    "FIELD_PICKER": "Field Picker"
+  },
+  "DEPARTMENT": {
+    "ENTITY_NAME": "Department",
+    "NAME": "Name",
+    "CODE": "Code",
+    "FACILITY": "Facility",
+    "CALENDAR": "Calendar",
+    "CREATED": "Created",
+    "UPDATED": "Updated",
+    "OEE_TARGET": "OEE Target",
+    "OEE_WARNING": "OEE Warning",
+    "QUALITY_TARGET": "Quality Target",
+    "QUALITY_WARNING": "Quality Warning",
+    "AVAIL_TARGET": "Availability Target",
+    "AVAIL_WARNING": "Availability Warning",
+    "PERFORM_TARGET": "Performance Target",
+    "PERFORM_WARNING": "Performance Warning",
+    "OEECALCULATE": "Calculate OEE using 0s or nulls?",
+    "ACTIVE": "Active"
+  },
+  "DEPARTMENT_FORM": {
+    "TITLE": "Departments",
+    "GENERAL_PANEL_TITLE": "Department Information",
+    "SETTINGS_PANEL_TITLE": "Settings",
+    "METRICS_PANEL_TITLE": "Metric Settings",
+    "SCRAP_LABEL": "Scrap Codes",
+    "DOWNTIME_LABEL": "Downtime Codes",
+    "OEE_TARGET_RANGE": "OEE Target must be between 0 and 100",
+    "OEE_WARNING_RANGE": "OEE Warning must be between 0 and the OEE Target",
+    "AVAIL_TARGET_RANGE": "Availability Target must be between 0 and 100",
+    "AVAIL_WARNING_RANGE": "Availability Warning must be between 0 and the Availability Target",
+    "PERFORM_TARGET_RANGE": "Performance Target must be between 0 and 100",
+    "PERFORM_WARNING_RANGE": "Performance Warning must be between 0 and the Performance Target",
+    "QUALITY_TARGET_RANGE": "Quality Target must be between 0 and 100",
+    "QUALITY_WARNING_RANGE": "Quality Warning must be between 0 and the Quality Target"
+  },
+  "PART": {
+    "ENTITY_NAME": "Part",
+    "NAME": "Name",
+    "COPART_NUMBER": "Co-Part",
+    "JOBREQUIRED": "Job Required",
+    "CYCLETIME": "Cycle Time",
+    "TAKTIME": "Takt Time",
+    "CREATED": "Created",
+    "UPDATED": "Updated",
+    "DESCRIPTION": "Description",
+    "PARTNUMBER": "Part Number",
+    "OUTPUTPERHOUR": "Output per Hour",
+    "CYCLETIME_UNITS": "Cycle Time Unit",
+    "MASTER": "Master Part",
+    "COST": "Cost",
+    "ACTIVE": "Active"
+  },
+  "PART_FORM": {
+    "TITLE": "Parts",
+    "GENERAL_PANEL_TITLE": "Part Information",
+    "SETTINGS_PANEL_TITLE": "Settings",
+    "GENERAL_TAB": "General",
+    "CYCLETIME_TAB": "Cycle Times"
+  },
+  "CELL": {
+    "ENTITY_NAME": "Cell",
+    "NAME": "Name",
+    "CODE": "Code",
+    "OEE_TARGET": "OEE Target",
+    "OEE_WARNING": "OEE Warning",
+    "QUALITY_TARGET": "Quality Target",
+    "QUALITY_WARNING": "Quality Warning",
+    "AVAIL_TARGET": "Availability Target",
+    "AVAIL_WARNING": "Availability Warning",
+    "PERFORM_TARGET": "Performance Target",
+    "PERFORM_WARNING": "Performance Warning",
+    "CALENDAR": "Calendar",
+    "DEPARTMENT": "Department",
+    "CREATED": "Created",
+    "UPDATED": "Updated",
+    "CYCLETIME": "Cycle Time",
+    "OEECALCULATE": "Calculate OEE using 0s or nulls?",
+    "DEVICE_NAME": "Device Tag",
+    "DOWNTIME_WEIGHT": "Downtime Weight",
+    "COST": "Cost / Hour",
+    "AUTO_START": "Auto Start",
+    "AUTO_STOP": "Auto Stop",
+    "RUN_AS_USER": "Run as User",
+    "SLOW_THRESHOLD": "Slow Threshold",
+    "STOP_THRESHOLD": "Short Stop Threshold",
+    "SLOW_REASONID": "Slow Reason",
+    "STOP_REASONID": "Short Stop Reason",
+    "TYPE": "Type",
+    "POSITION": "Position",
+    "PART": "Part",
+    "PARENT": "Parent",
+    "FINAL_OP": "Final Operation",
+    "RAW_CYCLETIME": "Raw Cycle Time",
+    "CYCLETIME_UNIT": "Cycle Time Unit",
+    "ACTIVE": "Active"
+  },
+  "CELL_FORM": {
+    "TITLE": "Cells/Machines",
+    "GENERAL_TAB": "General",
+    "METRICS_TAB": "Metrics",
+    "GENERAL_PANEL_TITLE": "Work Cell Information",
+    "SETTINGS_PANEL_TITLE": "Settings",
+    "SCRAP_LABEL": "Scrap Codes",
+    "DOWNTIME_LABEL": "Downtime Codes",
+    "METRICS_PANEL_TITLE": "Metric Settings",
+    "DEVICE_PANEL_TITLE": "Device Settings",
+    "OEE_TARGET_RANGE": "OEE Target must be between 0 and 100",
+    "OEE_WARNING_RANGE": "OEE Warning must be between 0 and the OEE Target",
+    "AVAIL_TARGET_RANGE": "Availability Target must be between 0 and 100",
+    "AVAIL_WARNING_RANGE": "Availability Warning must be between 0 and the Availability Target",
+    "PERFORM_TARGET_RANGE": "Performance Target must be between 0 and 100",
+    "PERFORM_WARNING_RANGE": "Performance Warning must be between 0 and the Performance Target",
+    "QUALITY_TARGET_RANGE": "Quality Target must be between 0 and 100",
+    "QUALITY_WARNING_RANGE": "Quality Warning must be between 0 and the Quality Target"
+  },
+  "CALENDAR": {
+    "ENTITY_NAME": "Calendar",
+    "NAME": "Calendar name",
+    "ACTIVE": "Active"
+  },
+  "CALENDAR_FORM": {
+    "TITLE": "Calendars",
+    "GENERAL_PANEL_TITLE": "General"
+  },
+  "CALENDAR_SHIFT": {
+    "ENTITY_NAME": "Shift",
+    "NAME": "Name",
+    "SHIFT_LABEL": "Shift Code",
+    "SHIFT_START": "Shift Start",
+    "SHIFT_STOP": "Shift Stop",
+    "DURATION": "Duration",
+    "REPEAT_UNTIL": "Repeat Until",
+    "MONDAY": "Monday",
+    "TUESDAY": "Tuesday",
+    "WEDNESDAY": "Wednesday",
+    "THURSDAY": "Thursday",
+    "FRIDAY": "Friday",
+    "SATURDAY": "Saturday",
+    "SUNDAY": "Sunday",
+    "AUTO_START_STOP": "Auto Start/Stop Shift",
+    "START_TOMORROW": "Start Tomorrow"
+  },
+  "CALENDAR_SHIFT_FORM": {
+    "TITLE": "Shifts",
+    "GENERAL_PANEL_TITLE": "General",
+    "RECURRENCE": "Recurrence",
+    "BREAKS": "Breaks"
+  },
+  "SHIFT_BREAK": {
+    "NAME": "Break Type",
+    "DURATION": "Duration"
+  },
+  "DOWNTIME": {
+    "NAME": "Name",
+    "CODE": "Code",
+    "DURATION": "Duration",
+    "ENTITY_NAME": "Downtime",
+    "ACTIVE": "Active"
+  },
+  "DOWNTIME_CATEGORY": {
+    "ENTITY_NAME": "Downtime Category",
+    "NAME": "Name",
+    "CODE": "Code",
+    "ACTIVE": "Active"
+  },
+  "DOWNTIME_FORM": {
+    "TITLE": "Downtime Codes",
+    "GENERAL_PANEL_TITLE": "Downtime Codes"
+  },
+  "DOWNTIME_CATEGORY_FORM": {
+    "TITLE": "Downtime Categores",
+    "GENERAL_PANEL_TITLE": "Downtime Categories"
+  },
+  "SCRAP_FORM": {
+    "TITLE": "Scrap Codes"
+  },
+  "SCRAP_CATEGORY_FORM": {
+    "TITLE": "Scrap"
+  },
+  "SCRAP": {
+    "ENTITY_NAME": "Scrap",
+    "SCRAP_CODE": "Scrap Code",
+    "SCRAP_NAME": "Scrap Name",
+    "CATEGORY_ID": "Scrap Category Id",
+    "ACTIVE": "Active"
+  },
+  "SCRAP_CATEGORY": {
+    "ENTITY_NAME": "Scrap Category",
+    "NAME": "Name",
+    "CODE": "Code",
+    "ACTIVE": "Active"
+  },
+  "SCRAP_ENTRY_FORM": {
+    "TITLE": "Scrap Reporting for "
+  },
+  "SHIFT_FORM": {
+    "TITLE": "Shifts"
+  },
+  "SHIFT": {
+    "ENTITY_NAME": "Shift",
+    "NAME": "Name",
+    "CODE": "Code",
+    "ACTIVE": "Active"
+  },
+  "PRODUCTION": {
+    "DATE": "Date",
+    "ENTITY_NAME": "Production Day",
+    "PRODUCTION_DATE": "Production Date",
+    "JOB_NUMBER": "Job Number",
+    "RUNNING": "Running",
+    "TOTAL_QTY": "Total Qty",
+    "SCRAP_QTY": "Scrap Qty",
+    "PASS_QTY": "Pass Qty",
+    "OEE_COST": "OEE Cost",
+    "AVAILABILITY": "Availability",
+    "AVAILABILITY_COST": "Availability Cost",
+    "QUALITY": "Quality",
+    "QUALITY_COST": "Quality Cost",
+    "PERFORMANCE": "Performance",
+    "PERFORMANCE_COST": "Performance Cost",
+    "TARGET_QTY": "Target Qty",
+    "DOWNTIME": "Downtime",
+    "ACTUAL_CYCLE_TIME": "Actual Cycle Time",
+    "COMMENT": "Comment",
+    "JOB_OPERATING_TIME": "Job Operating Time",
+    "SHIFT": "Shift"
+  },
+  "PRODUCTION_FORM": {
+    "GENERAL_PANEL_TITLE": "General",
+    "TITLE": "Production Day",
+    "DETAILS": "Details",
+    "GOOD_SCRAP": "Good/Scrap"
+  },
+  "PRODUCTION_EDIT_FORM": {
+    "TITLE": "Edit Production Record"
+  },
+  "PRODUCTION_COMMENT": {
+    "TITLE": "Comment"
+  },
+  "END_SHIFT_FORM": {
+    "TITLE": "End Production",
+    "OVERVIEW": "Overview"
+  },
+  "REPORT_PRODUCTION_FORM": {
+    "TITLE": "Report Production"
+  },
+  "EVENT": {
+    "ENTITY_NAME": "Events",
+    "ID": "Id",
+    "EVENT_DATE": "Date",
+    "EVENT_TYPE": "Event Type",
+    "QUANTITY": "Quantity",
+    "DURATION": "Duration",
+    "REASON": "Reason",
+    "SCRAP_NAME": "Scrap Name",
+    "DOWNTIME_NAME": "Downtime Name",
+    "COMMENT": "Comment",
+    "TAG_QUALITY": "Tag Quality",
+    "TAG_NAME": "Tag Name",
+    "ERROR": "Error"
+  },
+  "EVENT_EDIT_FORM": {
+    "TITLE": "Production History"
+  },
+  "OEE_DETAILS_FORM": {
+    "TITLE": "OEE Calculations"
+  },
+  "TAG_MAPPING": {
+    "ENTITY_NAME": "Tag Mapping",
+    "OPERATOR": "Operator",
+    "TAG_NAME": "Tag Name",
+    "TAG_VALUE": "Tag Value",
+    "EXPRESSION": "Expression",
+    "EVENT_TYPE": "Event Type",
+    "EVENT_VALUE": "Event Value",
+    "VALUE_SOURCE": "Value Source",
+    "META_FIELD": "Metadata"
+  },
+  "TAG_MAPPING_FORM": {
+    "TITLE": "Tag Mapping"
+  },
+  "MACHINE_EVENTS_META": {
+    "ENTITY_NAME": "Metadata",
+    "CODE": "Code",
+    "NAME": "Name",
+    "TYPE": "Type",
+    "FORMAT": "Format",
+    "DECIMALS": "Decimals",
+    "MODIFIER": "Modifier",
+    "MODIFIER_VALUE": "Modifier Value",
+    "TRENDS_DOWN": "Trends Down"
+  },
+  "MACHINE_EVENTS_META_FORM": {
+    "TITLE": "Metadata"
+  },
+  "MACHINE_EVENTS": {
+    "ENTITY_NAME": "Machine Events",
+    "NAME": "Name",
+    "EVENT_DATE": "Event Date",
+    "EVENT_TYPE": "Event Type",
+    "QUANTITY": "Quantity",
+    "REASON": "Reason",
+    "DURATION": "Duration",
+    "COMMENT": "Comment",
+    "TAG_QUALITY": "Tag Quality",
+    "TAG_NAME": "Tag Name",
+    "TAG_VALUE": "Tag Value",
+    "ERRORCODE": "Error Code",
+    "JOB_NUMBER": "Job Number",
+    "PROCESSED": "Processed",
+    "DEVICE_NAME": "Device Name"
+  },
+  "TEAM": {
+    "ENTITY_NAME": "Team",
+    "NAME": "Name",
+    "CODE": "Code",
+    "COLOR": "Color",
+    "ACTIVE": "Active"
+  },
+  "TEAM_FORM": {
+    "TITLE": "Teams"
+  }
+}

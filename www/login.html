@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <div class="modal-body">
+        <div class="row">
+            <div class="text-center">
+
+                <form name="loginForm" type=submit class="form-signin" ng-submit="submit()" ng-controller="LoginModalController">
+                    <div class="text-center" style="width: 300px; margin: 0 auto;">
+                        <h2 class="form-signin-heading">Please Login</h2>
+                        <div class="alert alert-danger" id='warningmsg' role="alert" ng-show="loginData.message">
+                            {{loginData.message |
+                            translate}}
+                        </div>
+                        <input type="string" name="inputEmail" value="" id="inputEmail" ng-model="inputEmail"
+                               class="form-control" placeholder=" Enter your user name" OR required
+                        autofocus>
+                        <p ng-show="loginForm.inputEmail.$invalid && !loginForm.inputEmail.$pristine" class="help-block">
+                            "Enter your user name"</p>
+                        <input type="password" name="inputPassword" ng-model="inputPassword" id="inputPassword"
+                               class="form-control"
+                               placeholder="Enter your user Password" required>
+
+                        <p ng-show="loginForm.inputPassword.$invalid && !loginForm.inputPassword.$pristine"
+                           class="help-block">
+                            "Enter your user name"</p>
+                        <button id="sign-in" class="btn btn-lg btn-primary btn-block" type="submit">
+                            Sign In
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+
+
+
+        </div>
+    </div>
+</div> <!-- /container -->
