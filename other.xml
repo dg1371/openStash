@@ -1,7 +1,0 @@
-<application>
-  <component name="NodeJsLocalInterpreters">
-    <local-interpreter path="C:/Program Files/nodejs/node.exe">
-      <npm-package value="C:/Program Files/nodejs/node_modules/npm" />
-    </local-interpreter>
-  </component>
-</application>
