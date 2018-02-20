@@ -1,18 +1,18 @@
 # openStash
 
-#install myslq and create a DB Schema name openstash
+#install myslq and create a DB Schema named openstash
 
-#user test1
+#user = test1
 
-#password openstash
+#password = openstash
 
+#npm install
 
 #npm install sequelize --global
 
 #npm install sequelise-cli --global
 
 #npm install bcrypt --global
-
 
 #sequelize db:migrate
 
