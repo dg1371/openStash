@@ -20,6 +20,8 @@
 
 #sequelize db:eed --seed user.js
 
+
+
 #sequelize db:eed --seed attachement.js
 
 
