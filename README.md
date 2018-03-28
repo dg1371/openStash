@@ -1,3 +1,5 @@
+![coddship status](https://codeship.com/projects/283337/status)
+
 # openStash
 
 #install myslq and create a DB Schema named openstash
