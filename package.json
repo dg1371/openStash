@@ -35,8 +35,9 @@
     "moment": "^2.18.1",
     "mysql": "^2.15.0",
     "npm": "^5.8.0",
-    "sequelize": "^3.31.2",
-    "sequelize-cli": "^2.7.0",
+    "pg": "^7.4.1",
+    "sequelize": "^4.22.12",
+    "sequelize-cli": "^3.1.0",
     "vision": "^4.1.1"
   },
   "description": "Ddgluck ",

@@ -99,8 +99,10 @@ server.app.version = Package.version;
 server.app.defaultPageSize = 25;
 
 var sequelizeOptions = {
-    dialect: "mysql",
-    port: 3306,
+    //dialect: "postgres",
+    dialect: "postgres",
+    //port: 3306,
+    port: 5432,
     // logging: sqlLogging,
     benchmark: true,
     pool: {
