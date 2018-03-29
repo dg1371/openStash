@@ -1,5 +1,11 @@
 {
+  "Name": "openStash",
+  "version": "1.1.23",
   "author": "OpenStash Dan Gluck",
+  "engines": {
+    "node": "6.9.4",
+    "npm": "5.8.0"
+  },
   "bugs": {
     "url": "https://github.com/dg1371/openStash/issues"
   },
@@ -28,15 +34,13 @@
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "mysql": "^2.15.0",
+    "npm": "^5.8.0",
     "sequelize": "^3.31.2",
     "sequelize-cli": "^2.7.0",
     "vision": "^4.1.1"
   },
   "description": "Ddgluck ",
   "devDependencies": {},
-  "engines": {
-    "node": "6.9.4"
-  },
   "homepage": "https://github.com/dg1371/stashIT.git#readme",
   "license": "ISC",
   "main": "server.js",
@@ -51,6 +55,5 @@
     "unitTest": "lab -c && protractor client_tests/conf.js",
     "protractor": "protractor client_tests/conf.js",
     "start": "node server.js"
-  },
-  "version": "2.1.1"
+  }
 }
