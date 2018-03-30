@@ -1,6 +1,7 @@
 
 var env = process.env.NODE_ENV || "development";
 console.log("======> Current ENV is: " + env);
+var config = require('./config/config.js')[env];
 var Joi = require("joi");
 var Hapi = require("hapi");
 var Inert = require("inert");
@@ -18,25 +19,32 @@ var Package = require("./package.json");
 var path = require("path");
 var Handlebars = require("handlebars");
 
-var sqlLogging              = process.env.SQL_LOGGING               || false;
-var redisHost               = process.env.REDIS_HOST                || "localhost";
-var cacheSegment            = process.env.CACHE_SEGMENT             || "openStash";
+var sqlLogging              = config.server.sqlLogging              || false;
+var redisHost               = config.server.redisHost               || "localhost";
+var cacheSegment            = config.server.cacheSegment            || "openStash";
 var timerCacheSegment       = cacheSegment + "timer";
 var downtimeCacheSegment    = cacheSegment + "downtime";
 var dataCacheSegment        = cacheSegment + "data";
 
-var mysqlHost               = process.env.MYSQL_HOST                || "localhost";
-var mysqlDatabase           = process.env.MYSQL_DATABASE            || "openstash";
-var mysqlUser               = process.env.MYSQL_USER                || "test1";
-var mysqlPassword           = process.env.MYSQL_PASSWORD            || "openstash";
+var test = config.database.host;
+console.log(test);
+
+var dbHost               = config.database.host            || "localhost";
+var Database           = config.database.database          || "openstash";
+var dbUser               = config.database.username        || "test1";
+var dbPort                  = config.database.port         || "5432";
+var dbPassword           = config.database.password        || "openstash";
 var JWT_SECRET = process.env.JWT_SECRET || "luDN4bu9EZ2Ki7IaeyoOll+2Em9NiMR/2f9WUZhZIEnvabsdjWnTUEnCbmw0UJ9o80cSW4h9aAPMk2Qi4Q+MXWqP7wDQ1OI4jWlEpkgATMIlHhCaROPLRnHS4rY4Vsp2+u13QHymHIsySFKb85Qvs88xCjD1TV1k3HQgG2EwL+F/3aZVZfImaLmkeGi6JxnxKjKkvc5hIdbnBt3HBFaPmFda1Wvb7fmvuhrBwcUJn/s3q2D6NIOQFpjr3CdVxN9hDlygKB4zSdf1R2ONCyU2SMEcApqOE7oByGVTEAaF2QJa0F+hCe4Fvz+ktlqueQt2FPI3OgSkGuCL4djRfeTkrA==";
 var COOKIE_SECRET = process.env.COOKIE_SECRET || "FxXMG60j0iveFgxUPC0NbgW7dvzeKyXjyU11c4hVYy+W2nzgDhaMrarREPZzvNcD8eu0Oqzd4QqcgNl5Ei5sj1y5wPgPxg4q/AmaphbCES9Lgjx71srUMOllykYtMAoEIPKPZn4+UbFvskM3aa999ZQ44c6PFe2bAG+fmIQuAihQFNvEdUI2/TgyKC3nfCCoILSnjXFcyaXxI5b5YQV3Umfrbj/KoLXZ6w6bpRjvprA4vJS01H7MI/kjyHAp+gPNtZ48h3B0skWYBQd/G0/0d8R4D+aFQzfXTWd6jzmeDLznxz1NbMbe6lBpaC/FxJj18OFr3LXSPZBjHHse0v9Q9Q==";
 
-var scheme = "http";
+var scheme = config.server.scheme;
 
-if (env=="development"){
-    scheme="http";
-}
+
+//if (env=="development"){
+//   scheme="http";
+//}
+
+
 var hb = Handlebars.create();
 hb.registerHelper({
     formatDate: function (date, format, timezone) {
@@ -80,7 +88,7 @@ var server = new Hapi.Server(serverConfig);
 
 
 server.connection({
-    port: 3000,
+    port: config.server.port,
    // host: 'localhost',
    routes: {
        cors: true,
@@ -98,12 +106,14 @@ server.app.jwtSecret = JWT_SECRET;
 server.app.version = Package.version;
 server.app.defaultPageSize = 25;
 
+console.log("sdfsadf"+config.database.dialect);
+
 var sequelizeOptions = {
-    //dialect: "postgres",
     dialect: "postgres",
+   // dialect: config.database.dialect,
     //port: 3306,
-    port: 5432,
-    // logging: sqlLogging,
+    port: config.database.port,
+   // logging: config.server.sqlLogging,
     benchmark: true,
     pool: {
         min: 10,
@@ -116,7 +126,7 @@ var sequelizeOptions = {
 
 };
 
-var sequelize = new Sequelize(mysqlDatabase, mysqlUser, mysqlPassword, sequelizeOptions);
+var sequelize = new Sequelize(Database, dbUser, dbPassword, sequelizeOptions);
 
 
         server.register([Inert,
