@@ -4,8 +4,8 @@
 module.exports = {
     up: function (queryInterface, Sequelize) {
         return queryInterface.bulkInsert('attachement', [
-            {   "id": "2c35de20-5012-11e6-a019-07b01393e1fg",
-                "CompanyId":"2c35de20-5012-11e6-a019-07b01393e1fe",
+            {   "id": "7519a7a0-3474-11e8-b467-0ed5f89f718b",
+                "companyId":"2c35de20-5012-11e6-a019-07b01393e1fe",
                 "description": "file 1 ",
                 "file": "ddgluck",
                 "active": "1",

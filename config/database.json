@@ -28,11 +28,11 @@
     "seederStorageTableName": "sequelize_data"
   },
   "heroku_dev": {
-    "username": "test1",
-    "password": "openstash",
-    "database": "openstash",
+    "username": "ynwfvdzenmzgdv",
+    "password": "abb01e73f261644ba2849a10ec12b8b679b7e540f6a41a4c1159ad861e5af917",
+    "database": "d1q8uva1i3fjtu",
     "port": "5432",
-    "host": "localhost",
+    "host": "ec2-174-129-206-173.compute-1.amazonaws.com",
     "dialect": "postgres",
     "seederStorageTableName": "sequelize_data"
   }}

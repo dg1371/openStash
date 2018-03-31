@@ -111,8 +111,8 @@ console.log("sdfsadf"+config.database.dialect);
 var sequelizeOptions = {
     dialect: "postgres",
    // dialect: config.database.dialect,
-    //port: 3306,
-    port: config.database.port,
+    port: 5432,
+    //port: config.database.port,
    // logging: config.server.sqlLogging,
     benchmark: true,
     pool: {
@@ -126,7 +126,12 @@ var sequelizeOptions = {
 
 };
 
-var sequelize = new Sequelize(Database, dbUser, dbPassword, sequelizeOptions);
+var sequelize = new Sequelize(Database, dbUser, dbPassword,{
+    host: 'localhost',
+    //port: 5432,
+        dialect: 'postgres',
+        protocol: 'postgres'
+});
 
 
         server.register([Inert,

@@ -28,6 +28,7 @@ var config = {
     dev_postgres: {
         //url to be used in link generation
         url: 'http://my.site.com',
+        dialect: "postgres",
         //mongodb connection settings
         database: {
             username: 'test1',
@@ -45,7 +46,7 @@ var config = {
             cacheSegment: 'openStash',
             redisHost: 'localhost',
             sqlLogging: 'false',
-            scheme: 'http'
+            scheme: 'http',
         }
     },
     huroku: {
@@ -58,7 +59,7 @@ var config = {
             database: 'd1q8uva1i3fjtu',
             port: '5432',
             host: 'ec2-174-129-206-173.compute-1.amazonaws.com',
-            dialect: 'mysql',
+            dialect: 'postgres',
             seederStorageTableName: 'sequelize_data',
             URI: 'postgres://ynwfvdzenmzgdv:abb01e73f261644ba2849a10ec12b8b679b7e540f6a41a4c1159ad861e5af917@ec2-174-129-206-173.compute-1.amazonaws.com:5432/d1q8uva1i3fjtu'
         },
@@ -94,6 +95,14 @@ var config = {
             sqlLogging: 'false',
             scheme: 'http'
         }
+    },
+
+    postgres: {
+        database: 'openstash',
+        username: 'test1',
+        password: 'openstash',
+        dialect: 'postgres',
+        port: '5432'
     }
 };
 module.exports = config;
