@@ -57,7 +57,7 @@ var config = {
             scheme: 'http',
         }
     },
-    huroku: {
+    dev_huroku: {
         //url to be used in link generation
         url: 'http://my.site.com',
         //mongodb connection settings
