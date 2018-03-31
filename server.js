@@ -122,12 +122,12 @@ var sequelizeOptions = {
     },
 
 };
-
-var sequelize = new Sequelize(Database, dbUser, dbPassword,{
-        host: dbHost,
-        port: dbPort,
+var sequelize = new Sequelize(process.env.DATABASE_URL, {
+//var sequelize = new Sequelize(Database, dbUser, dbPassword,{
+       // host: dbHost,
+       // port: dbPort,
         dialect: dialect,
-        protocol: dialect,
+        //protocol: dialect,
     dialectOptions: {
         ssl: true
     }
