@@ -67,11 +67,11 @@ heroku config:set CACHE_SEGMENT=openStash
 heroku config:set REDIS_HOST=localhost
 heroku config:set SQL_LOGGING=false
 heroku config:set SCHEME=http
-heroku config:set DB_USERNAME=ynwfvdzenmzgdv
-heroku config:set DB_PASSWORD=abb01e73f261644ba2849a10ec12b8b679b7e540f6a41a4c1159ad861e5af917
-heroku config:set DATABASE=d1q8uva1i3fjtu
+heroku config:set DB_USERNAME=dbmoqpfgsunqzd
+heroku config:set DB_PASSWORD=0e4fe6b25f61ec0f2a38eeee307347b47192dbc5fa2a90b83932e54390768081
+heroku config:set DATABASE=ddf0ug0bpgg8qa
 heroku config:set DB_PORT=5432
-heroku config:set DB_HOST=ec2-174-129-206-173.compute-1.amazonaws.com
+heroku config:set DB_HOST=ec2-54-243-63-13.compute-1.amazonaws.com
 heroku config:set DIALECT=postgres
 heroku config:set SEEDER_STORAGE_TABLE_NAME="sequelize_data"
 heroku config:set JWT_SECRET="luDN4bu9EZ2Ki7IaeyoOll+2Em9NiMR/2f9WUZhZIEnvabsdjWnTUEnCbmw0UJ9o80cSW4h9aAPMk2Qi4Q+MXWqP7wDQ1OI4jWlEpkgATMIlHhCaROPLRnHS4rY4Vsp2+u13QHymHIsySFKb85Qvs88xCjD1TV1k3HQgG2EwL+F/3aZVZfImaLmkeGi6JxnxKjKkvc5hIdbnBt3HBFaPmFda1Wvb7fmvuhrBwcUJn/s3q2D6NIOQFpjr3CdVxN9hDlygKB4zSdf1R2ONCyU2SMEcApqOE7oByGVTEAaF2QJa0F+hCe4Fvz+ktlqueQt2FPI3OgSkGuCL4djRfeTkrA=="

@@ -62,11 +62,11 @@ var config = {
         url: 'http://my.site.com',
         //mongodb connection settings
         database: {
-            username: 'ynwfvdzenmzgdv',
-            password: 'abb01e73f261644ba2849a10ec12b8b679b7e540f6a41a4c1159ad861e5af917',
-            database: 'd1q8uva1i3fjtu',
+            username: 'dbmoqpfgsunqzd',
+            password: "0e4fe6b25f61ec0f2a38eeee307347b47192dbc5fa2a90b83932e54390768081",
+            database: 'ddf0ug0bpgg8qa',
             port: '5432',
-            host: 'ec2-174-129-206-173.compute-1.amazonaws.com',
+            host: 'ec2-54-243-63-13.compute-1.amazonaws.com',
             dialect: 'postgres',
             seederStorageTableName: 'sequelize_data',
             URI: 'postgres://ynwfvdzenmzgdv:abb01e73f261644ba2849a10ec12b8b679b7e540f6a41a4c1159ad861e5af917@ec2-174-129-206-173.compute-1.amazonaws.com:5432/d1q8uva1i3fjtu'
