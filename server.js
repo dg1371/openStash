@@ -26,8 +26,8 @@ var timerCacheSegment       = cacheSegment + "timer";
 var downtimeCacheSegment    = cacheSegment + "downtime";
 var dataCacheSegment        = cacheSegment + "data";
 
-//var dbHost               = process.env.DB_HOST       || "localhost";
-var dbHost               = process.env.DATABASE_URL   || "localhost";
+var dbHost               = process.env.DB_HOST       || "localhost";
+//var dbHost               = process.env.DATABASE_URL   || "localhost";
 var Database             = process.env.DATABASE        || "openstash";
 var dbUser               = process.env.DB_USERNAME   || "test1";
 var dialect               = process.env.DIALECT       || "postgres";
