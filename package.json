@@ -2,7 +2,10 @@
   "Name": "openStash",
   "version": "1.1.23",
   "author": "OpenStash Dan Gluck",
-
+  "engines": {
+    "node": "6.9.4",
+    "npm": "5.8.0"
+  },
   "bugs": {
     "url": "https://github.com/dg1371/openStash/issues"
   },

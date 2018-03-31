@@ -21,6 +21,7 @@ IF NOT %1=="-b" GOTO UNKNOWN
 :dev_postgres
 
 set NODE_ENV = "dev_postgres"
+set SSL = "false"
 set SERVER_PORT = "3000"
 set CACHE_SEGMENT = "openStash"
 set REDIS_HOST = "localhost"
@@ -62,9 +63,10 @@ GOTO DONE
 :dev_heroku
 
 heroku config:set NODE_ENV=dev_heroku
+heroku config:set SSL=true
 heroku config:set PORT=3000
 heroku config:set CACHE_SEGMENT=openStash
-heroku config:set REDIS_HOST=localhost
+heroku config:set REDIS_HOST=ec2-50-16-50-168.compute-1.amazonaws.com
 heroku config:set SQL_LOGGING=false
 heroku config:set SCHEME=http
 heroku config:set DB_USERNAME=dbmoqpfgsunqzd

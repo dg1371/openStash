@@ -37,6 +37,7 @@ var JWT_SECRET           = process.env.JWT_SECRET    || "luDN4bu9EZ2Ki7IaeyoOll+
 var COOKIE_SECRET        = process.env.COOKIE_SECRET || "FxXMG60j0iveFgxUPC0NbgW7dvzeKyXjyU11c4hVYy+W2nzgDhaMrarREPZzvNcD8eu0Oqzd4QqcgNl5Ei5sj1y5wPgPxg4q/AmaphbCES9Lgjx71srUMOllykYtMAoEIPKPZn4+UbFvskM3aa999ZQ44c6PFe2bAG+fmIQuAihQFNvEdUI2/TgyKC3nfCCoILSnjXFcyaXxI5b5YQV3Umfrbj/KoLXZ6w6bpRjvprA4vJS01H7MI/kjyHAp+gPNtZ48h3B0skWYBQd/G0/0d8R4D+aFQzfXTWd6jzmeDLznxz1NbMbe6lBpaC/FxJj18OFr3LXSPZBjHHse0v9Q9Q==";
 var scheme               = process.env.SCHEME        || "http";
 var serverPort           = process.env.PORT          || 3000;
+var SSL                   = process.env.SSL           || false;
 
 //if (env=="development"){
 //   scheme="http";
@@ -74,12 +75,12 @@ var serverConfig = {
     app: {
         version: Package.version,
         logLevel: "error"
-    },
-    cache: [{
-        engine: require("catbox-redis"),
-        host: redisHost,
-        shared: true
-    }]
+    }
+  //  cache: [{
+  //      engine: require("catbox-redis"),
+  //      host: redisHost,
+  //      shared: true
+  //  }]
 };
 
 var server = new Hapi.Server(serverConfig);
@@ -122,14 +123,14 @@ var sequelizeOptions = {
     },
 
 };
-var sequelize = new Sequelize(process.env.DATABASE_URL, {
-//var sequelize = new Sequelize(Database, dbUser, dbPassword,{
-       // host: dbHost,
-       // port: dbPort,
+//var sequelize = new Sequelize(process.env.DATABASE_URL, {
+var sequelize = new Sequelize(Database, dbUser, dbPassword,{
+        host: dbHost,
+        port: dbPort,
         dialect: dialect,
         //protocol: dialect,
     dialectOptions: {
-        ssl: true
+        ssl: SSL
     }
 });
 
