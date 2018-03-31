@@ -127,10 +127,10 @@ var sequelize = new Sequelize(Database, dbUser, dbPassword,{
         host: dbHost,
         port: dbPort,
         dialect: dialect,
-        protocol: dialect
-   // dialectOptions: {
-    //    ssl: true
-   // }
+        protocol: dialect,
+    dialectOptions: {
+        ssl: true
+    }
 });
 
 
