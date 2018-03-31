@@ -19,7 +19,7 @@ var Package = require("./package.json");
 var path = require("path");
 var Handlebars = require("handlebars");
 
-var sqlLogging              = config.server.sqlLogging              || false;
+var sqlLogging              = 'false'
 var redisHost               = config.server.redisHost               || "localhost";
 var cacheSegment            = config.server.cacheSegment            || "openStash";
 var timerCacheSegment       = cacheSegment + "timer";
