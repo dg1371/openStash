@@ -27,7 +27,7 @@ var downtimeCacheSegment    = cacheSegment + "downtime";
 var dataCacheSegment        = cacheSegment + "data";
 
 var dbHost               = process.env.DB_HOST       || "localhost";
-var Database             = process.env.DATABASE      || "openstash";
+var Database             = process.env.DATABASE_URL  || "openstash";
 var dbUser               = process.env.DB_USERNAME   || "test1";
 var dialect               = process.env.DIALECT       || "postgres";
 var dbPort               = process.env.DB_PORT       || "5432";
