@@ -35,4 +35,13 @@
     "host": "ec2-54-243-63-13.compute-1.amazonaws.com",
     "dialect": "postgres",
     "seederStorageTableName": "sequelize_data"
+  },
+  "production": {
+    "username": "dbmoqpfgsunqzd",
+    "password": "0e4fe6b25f61ec0f2a38eeee307347b47192dbc5fa2a90b83932e54390768081",
+    "database": "ddf0ug0bpgg8qa",
+    "port": "5432",
+    "host": "ec2-54-243-63-13.compute-1.amazonaws.com",
+    "dialect": "postgres",
+    "seederStorageTableName": "sequelize_data"
   }}
