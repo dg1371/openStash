@@ -126,7 +126,7 @@ var sequelizeOptions = {
 var sequelize = new Sequelize(Database, dbUser, dbPassword,{
         host: dbHost,
         port: dbPort,
-        dialect: dialect
+        dialect: dialect,
         protocol: 'postgres',
     dialectOptions: {
         ssl: true
