@@ -62,7 +62,7 @@ GOTO DONE
 :dev_heroku
 
 heroku config:set NODE_ENV=dev_heroku
-heroku config:set SERVER_PORT=3000
+heroku config:set PORT=3000
 heroku config:set CACHE_SEGMENT=openStash
 heroku config:set REDIS_HOST=localhost
 heroku config:set SQL_LOGGING=false
