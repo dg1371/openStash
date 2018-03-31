@@ -127,10 +127,10 @@ var sequelizeOptions = {
 };
 
 var sequelize = new Sequelize(Database, dbUser, dbPassword,{
-    host: 'localhost',
-    //port: 5432,
-        dialect: 'postgres',
-        protocol: 'postgres'
+   // host: 'localhost',
+        port: 5432,
+        dialect: 'postgres'
+       // protocol: 'postgres'
 });
 
 
