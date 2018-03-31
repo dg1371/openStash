@@ -28,6 +28,7 @@
     "seederStorageTableName": "sequelize_data"
   },
   "dev_heroku": {
+    "use_env_variable": "DATABASE_URL",
     "username": "dbmoqpfgsunqzd",
     "password": "0e4fe6b25f61ec0f2a38eeee307347b47192dbc5fa2a90b83932e54390768081",
     "database": "ddf0ug0bpgg8qa",
@@ -37,6 +38,7 @@
     "seederStorageTableName": "sequelize_data"
   },
   "production": {
+    "use_env_variable": "DATABASE_URL",
     "username": "dbmoqpfgsunqzd",
     "password": "0e4fe6b25f61ec0f2a38eeee307347b47192dbc5fa2a90b83932e54390768081",
     "database": "ddf0ug0bpgg8qa",
