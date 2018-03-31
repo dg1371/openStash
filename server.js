@@ -27,7 +27,7 @@ var downtimeCacheSegment    = cacheSegment + "downtime";
 var dataCacheSegment        = cacheSegment + "data";
 
 var dbHost               = process.env.DB_HOST       || "localhost";
-var Database             = process.env.DATABASE_URL  || "openstash";
+var Database             = process.env.DATABASE  || "openstash";
 var dbUser               = process.env.DB_USERNAME   || "test1";
 var dialect               = process.env.DIALECT       || "postgres";
 var dbPort               = process.env.DB_PORT       || "5432";
@@ -126,7 +126,10 @@ var sequelize = new Sequelize(Database, dbUser, dbPassword,{
         host: dbHost,
         port: dbPort,
         dialect: dialect
-    // protocol: 'postgres'
+        protocol: 'postgres',
+    dialectOptions: {
+        ssl: true
+    }
 });
 
 
