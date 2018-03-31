@@ -5,14 +5,22 @@ var config = {
     development: {
         //url to be used in link generation
         url: 'http://my.site.com',
+        username: 'test1',
+        password: 'openstash',
+        database: 'openstash',
+        port: '5432',
+        host: 'localhost',
+        dialect: 'postgres',
+        seederStorageTableName: 'sequelize_data',
+        dialect: "postgres",
         //mongodb connection settings
         database: {
             username: 'test1',
             password: 'openstash',
             database: 'openstash',
-            port: '3306',
+            port: '5432',
             host: 'localhost',
-            dialect: 'mysql',
+            dialect: 'postgres',
             seederStorageTableName: 'sequelize_data'
         },
         //server details
@@ -22,7 +30,7 @@ var config = {
             cacheSegment: 'openStash',
             redisHost: 'localhost',
             sqlLogging: 'false',
-            scheme: 'http'
+            scheme: 'http',
         }
     },
     dev_postgres: {

@@ -20,8 +20,8 @@ var path = require("path");
 var Handlebars = require("handlebars");
 
 var sqlLogging              = 'false'
-var redisHost               = config.server.redisHost               || "localhost";
-var cacheSegment            = config.server.cacheSegment            || "openStash";
+var redisHost               =  "localhost";
+var cacheSegment            = "openStash";
 var timerCacheSegment       = cacheSegment + "timer";
 var downtimeCacheSegment    = cacheSegment + "downtime";
 var dataCacheSegment        = cacheSegment + "data";

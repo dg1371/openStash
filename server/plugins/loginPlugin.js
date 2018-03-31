@@ -34,7 +34,7 @@ var loginPlugin =
                        var models = request.models;
                        models.user.unscoped().findOne({
                             where: {
-                                userId: request.payload.inputEmail
+                                userID: request.payload.inputEmail
                                 //active: true
                             },
                             include: [models.company]
