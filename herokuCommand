@@ -1,0 +1,9 @@
+heroku run sequelize db:migrate
+heroku run sequelize db:seed --seed company.js
+heroku run sequelize db:seed --seed user.js
+heroku run sequelize db:seed --seed attachement.js
+git push openstash master
+heroku login
+heroku logs --tail
+heroku ps:scale web=1
+heroku ps:scale web=0
