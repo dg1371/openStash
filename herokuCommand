@@ -7,3 +7,4 @@ heroku login
 heroku logs --tail
 heroku ps:scale web=1
 heroku ps:scale web=0
+heroku config

@@ -20,7 +20,10 @@ var path = require("path");
 var Handlebars = require("handlebars");
 
 var sqlLogging              = process.env.SQL_LOGGING ||'false'
-var redisHost               = process.env.REDIS_URL || "localhost";
+var redisHost               = process.env.REDIS_HOST || "localhost";
+var redisPort               = process.env.REDIS_PORT || "";
+var redisUser               = process.env.REDIS_USER || "";
+var redisPasword            = process.env.REDIS_PASSWORD || "";
 var cacheSegment            = process.env.CACHE_SEGMENT || "openStash";
 var timerCacheSegment       = cacheSegment + "timer";
 var downtimeCacheSegment    = cacheSegment + "downtime";
@@ -90,16 +93,20 @@ var serverConfig = {
         version: Package.version,
         logLevel: "error"
     },
-    cache: cache_cfg
-        //[{
-        //engine: require("catbox-redis"),
-        //host: redisHost,
-        //shared: true
-   // }]
+    //cache: cache_cfg
+        cache: [{
+        engine: require("catbox-redis"),
+        host: redisHost,
+        port: redisPort,
+        shared: true
+   }]
 };
 
 var server = new Hapi.Server(serverConfig);
 
+//var server = Hapi.createServer('localhost', 8000, {
+//    cache: cache_cfg
+//});
 
 server.connection({
     port: process.env.PORT ||3000,
