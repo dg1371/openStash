@@ -71,16 +71,31 @@ var swaggerOptions = {
     sortEndpoints: "path"
 };
 
+var cache_cfg;
+
+if (process.env.REDISTOGO_URL) {
+    var rtg = require("url").parse(process.env.REDIS_URL)
+    cache_cfg = {
+        engine: 'catbox-redis',
+        host: rtg.hostname,
+        port: rtg.port,
+        password: rtg.auth.split(":")[1]
+    };
+} else {
+    cache_cfg = 'catbox-redis';
+}
+
 var serverConfig = {
     app: {
         version: Package.version,
         logLevel: "error"
     },
-    cache: [{
-        engine: require("catbox-redis"),
-        host: redisHost,
-        shared: true
-    }]
+    cache: cache_cfg
+        //[{
+        //engine: require("catbox-redis"),
+        //host: redisHost,
+        //shared: true
+   // }]
 };
 
 var server = new Hapi.Server(serverConfig);
