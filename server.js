@@ -20,7 +20,7 @@ var path = require("path");
 var Handlebars = require("handlebars");
 
 var sqlLogging              = process.env.SQL_LOGGING ||'false'
-var redisHost               = process.env.REDIS_HOST || "localhost";
+var redisHost               = process.env.REDIS_URL || "localhost";
 var cacheSegment            = process.env.CACHE_SEGMENT || "openStash";
 var timerCacheSegment       = cacheSegment + "timer";
 var downtimeCacheSegment    = cacheSegment + "downtime";
@@ -75,19 +75,19 @@ var serverConfig = {
     app: {
         version: Package.version,
         logLevel: "error"
-    }
-  //  cache: [{
-  //      engine: require("catbox-redis"),
-  //      host: redisHost,
-  //      shared: true
-  //  }]
+    },
+    cache: [{
+        engine: require("catbox-redis"),
+        host: redisHost,
+        shared: true
+    }]
 };
 
 var server = new Hapi.Server(serverConfig);
 
 
 server.connection({
-    port: process.env.PORT,
+    port: process.env.PORT ||3000,
    routes: {
        cors: true,
        files: {
@@ -229,7 +229,7 @@ var sequelize = new Sequelize(Database, dbUser, dbPassword,{
 
                         if (!cached) {
 
-                            server.methods.log("error", "session", "Cached user not found.");
+                            server.method.log("error", "session", "Cached user not found.");
                             return callback(null, false);
                         }
 
