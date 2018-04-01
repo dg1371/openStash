@@ -98,6 +98,7 @@ var serverConfig = {
         engine: require("catbox-redis"),
         host: redisHost,
         port: redisPort,
+        password: redisPasword,
         shared: true
    }]
 };
