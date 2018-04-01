@@ -60,7 +60,7 @@ var loginPlugin =
                                             //Put the user object in the cache.
                                             request.server.app.cache.set(sid, {user: sessionUser}, ONE_MONTH, function (err) {
                                                 if(err) {
-                                                    server.log("error ", "login",err);
+                                                    server.method.log("error ", "login",err);
                                                 }
                                                 //Set the session id in the cookie.
 
