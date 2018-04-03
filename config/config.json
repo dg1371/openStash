@@ -1,38 +1,38 @@
 
 {
   "development": {
-    "username": "test1",
-    "password": "openstash",
-    "database": "openstash",
-    "port": "5432",
-    "host": "localhost",
-    "dialect": "postgres",
-    "seederStorageTableName": "sequelize_data"
+    "username": "",
+    "password": "",
+    "database": "",
+    "port": "",
+    "host": "",
+    "dialect": "",
+    "seederStorageTableName": ""
   },
   "dev_postgres": {
-    "username": "test1",
-    "password": "openstash",
-    "database": "openstash",
-    "port": "5432",
-    "host": "localhost",
-    "dialect": "postgres",
-    "seederStorageTableName": "sequelize_data"
+    "username": "",
+    "password": "",
+    "database": "",
+    "port": "",
+    "host": "",
+    "dialect": "",
+    "seederStorageTableName": ""
   },
   "dev_mysql": {
-    "username": "test1",
-    "password": "openstash",
-    "database": "openstash",
-    "port": "3306",
-    "host": "localhost",
-    "dialect": "mysql",
-    "seederStorageTableName": "sequelize_data"
+    "username": "",
+    "password": "",
+    "database": "",
+    "port": "",
+    "host": "",
+    "dialect": "",
+    "seederStorageTableName": ""
   },
   "heroku_dev": {
-    "username": "test1",
-    "password": "openstash",
-    "database": "openstash",
-    "port": "5432",
-    "host": "localhost",
-    "dialect": "postgres",
-    "seederStorageTableName": "sequelize_data"
+    "username": "",
+    "password": "",
+    "database": "",
+    "port": "",
+    "host": "",
+    "dialect": "",
+    "seederStorageTableName": ""
   }}
