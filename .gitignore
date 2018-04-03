@@ -17,7 +17,7 @@ ide.general.xml
 project.default.xml
 ui.lnf.xml
 vcs.xml
-
+.vs
 
 # Docker
 Dockerfile
