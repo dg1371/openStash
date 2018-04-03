@@ -12,5 +12,6 @@ Dockerfile
 docker-compose.yml
 
 .setENV.cmd
-herokuCommand
-database.json
+/herokuCommand
+/config/database.json
+/config/database.json.bak
