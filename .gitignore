@@ -16,6 +16,6 @@ Dockerfile
 docker-compose.yml
 codestyles
 _windows
-./*.xml
+*.xml
 
 
