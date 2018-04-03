@@ -13,3 +13,4 @@ docker-compose.yml
 
 .setENV.cmd
 herokuCommand
+database.json

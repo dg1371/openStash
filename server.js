@@ -74,6 +74,7 @@ var swaggerOptions = {
     sortEndpoints: "path"
 };
 
+/*
 var cache_cfg;
 
 if (process.env.REDISTOGO_URL) {
@@ -87,7 +88,7 @@ if (process.env.REDISTOGO_URL) {
 } else {
     cache_cfg = 'catbox-redis';
 }
-
+*/
 var serverConfig = {
     app: {
         version: Package.version,
@@ -97,6 +98,7 @@ var serverConfig = {
         cache: [{
         engine: require("catbox-redis"),
         host: redisHost,
+        //user:redisUser,
         port: redisPort,
         password: redisPasword,
         shared: true
