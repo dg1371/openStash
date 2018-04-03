@@ -6,12 +6,12 @@ npm-debug.log
 *.env
 *.dev
 .DS_Store
+.setENV.cmd
+herokuCommand
+config/database.json
+config/database.json.bak
 
 # Docker
 Dockerfile
 docker-compose.yml
 
-.setENV.cmd
-herokuCommand
-config/database.json
-config/database.json.bak
