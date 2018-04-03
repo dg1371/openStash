@@ -2,6 +2,9 @@
 var env = process.env.NODE_ENV || "development";
 console.log("======> Current ENV is: " + env);
 var config = require('./config/config.js')[env];
+
+console.log("sdfsdfsdfs" + config.SSL);
+
 var Joi = require("joi");
 var Hapi = require("hapi");
 var Inert = require("inert");
@@ -19,6 +22,32 @@ var Package = require("./package.json");
 var path = require("path");
 var Handlebars = require("handlebars");
 
+
+var sqlLogging              = config.SQL_LOGGING;
+var redisHost               = config.REDIS_HOST;
+var redisPort               = config.REDIS_PORT;
+var redisUser               = config.REDIS_USER;
+var redisPasword            = config.REDIS_PASSWORD;
+var cacheSegment            = config.CACHE_SEGMENT;
+var timerCacheSegment       = cacheSegment + "timer";
+var downtimeCacheSegment    = cacheSegment + "downtime";
+var dataCacheSegment        = cacheSegment + "data";
+
+var dbHost               = config.host;
+//var dbHost               = process.env.DATABASE_URL   || "localhost";
+var Database             = config.database;
+var dbUser               = config.username;
+var dialect               = config.dialect;
+var dbPort               = config.port;
+var dbPassword           = config.password;
+var JWT_SECRET           = config.JWT_SECRET;
+var COOKIE_SECRET        = config.COOKIE_SECRET;
+var scheme               = config.SCHEME;
+var serverPort           = config.PORT;
+var SSL1                  = config.SSL          || false;
+
+
+/*
 var sqlLogging              = process.env.SQL_LOGGING ||'false'
 var redisHost               = process.env.REDIS_HOST || "localhost";
 var redisPort               = process.env.REDIS_PORT || "";
@@ -41,6 +70,8 @@ var COOKIE_SECRET        = process.env.COOKIE_SECRET || "FxXMG60j0iveFgxUPC0NbgW
 var scheme               = process.env.SCHEME        || "http";
 var serverPort           = process.env.PORT          || 3000;
 var SSL                   = process.env.SSL           || false;
+
+*/
 
 //if (env=="development"){
 //   scheme="http";
@@ -152,11 +183,11 @@ var sequelizeOptions = {
 var sequelize = new Sequelize(Database, dbUser, dbPassword,{
         host: dbHost,
         port: dbPort,
+        ssl: SSL1,
         dialect: dialect,
-        //protocol: dialect,
-    dialectOptions: {
-        ssl: SSL
-    }
+   dialectOptions: {
+       ssl: SSL1
+   }
 });
 
 
