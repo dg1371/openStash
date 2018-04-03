@@ -14,4 +14,6 @@ config/database.json.bak
 # Docker
 Dockerfile
 docker-compose.yml
+codestyles
+_windows
 
