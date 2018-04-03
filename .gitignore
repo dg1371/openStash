@@ -11,7 +11,7 @@ npm-debug.log
 Dockerfile
 docker-compose.yml
 
-/.setENV.cmd
-/herokuCommand
-/config/database.json
-/config/database.json.bak
+.setENV.cmd
+herokuCommand
+config/database.json
+config/database.json.bak
