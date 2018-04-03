@@ -10,12 +10,19 @@ npm-debug.log
 herokuCommand
 config/database.json
 config/database.json.bak
+debugger.xml
+editor.xml
+find.xml
+ide.general.xml
+project.default.xml
+ui.lnf.xml
+vcs.xml
+
 
 # Docker
 Dockerfile
 docker-compose.yml
 codestyles
 _windows
-*.xml
 
 

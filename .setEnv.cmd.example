@@ -1,0 +1,169 @@
+ECHO on
+ECHO.
+
+
+if "%~1"=="" goto BLANK
+
+IF "%~1"=="dev_postgres" GOTO dev_postgres
+
+IF "%~1"=="dev_mysql" GOTO dev_postgres
+
+IF "%~1"=="dev_heroku" GOTO dev_heroku
+
+IF "%~1"=="test_heroku" GOTO test_heroku
+
+IF "%~1"=="prod_heroku" GOTO prod_heroku
+
+IF [%1]==[/?] GOTO BLANK
+
+IF NOT %1=="-b" GOTO UNKNOWN
+
+:dev_postgres
+
+set NODE_ENV = ""
+set SSL = ""
+set SERVER_PORT = ""
+set CACHE_SEGMENT = ""
+set REDIS_HOST =
+set REDIS_PORT = ""
+set REDIS_USER = ""
+set REDIS_PASSWORD = ""
+set SQL_LOGGING = ""
+set SCHEME= ""
+set DB_USERNAME = ""
+set DB_PASSWORD = ""
+set DATABASE = ""
+set DB_PORT = ""
+set DB_HOST = ""
+set DIALECT = ""
+set SEEDER_STORAGE_TABLE_NAME = ""
+set JWT_SECRET = ""
+set COOKIE_SECRET = ""
+ECHO %1
+
+GOTO DONE
+
+:dev_mysql
+
+set NODE_ENV = ""
+set SSL = ""
+set SERVER_PORT = ""
+set CACHE_SEGMENT = ""
+set REDIS_HOST =
+set REDIS_PORT = ""
+set REDIS_USER = ""
+set REDIS_PASSWORD = ""
+set SQL_LOGGING = ""
+set SCHEME= ""
+set DB_USERNAME = ""
+set DB_PASSWORD = ""
+set DATABASE = ""
+set DB_PORT = ""
+set DB_HOST = ""
+set DIALECT = ""
+set SEEDER_STORAGE_TABLE_NAME = ""
+set JWT_SECRET = ""
+set COOKIE_SECRET = ""
+ECHO %1
+
+
+GOTO DONE
+
+:dev_heroku
+
+heroku config:set NODE_ENV=
+heroku config:set SSL=
+heroku config:set PORT=
+heroku config:set CACHE_SEGMENT=
+heroku config:set REDIS_HOST=
+heroku config:set REDIS_PORT=
+heroku config:set REDIS_USER=
+heroku config:set REDIS_PASSWORD=
+heroku config:set SQL_LOGGING=
+heroku config:set SCHEME=
+heroku config:set DB_USERNAME=
+heroku config:set DB_PASSWORD=
+heroku config:set DATABASE=
+heroku config:set DB_PORT=
+heroku config:set DB_HOST=
+heroku config:set DIALECT=
+heroku config:set SEEDER_STORAGE_TABLE_NAME=""
+heroku config:set JWT_SECRET=""
+heroku config:set COOKIE_SECRET=""
+heroku config:set DATABASE_URL=""
+
+ECHO %1
+
+GOTO DONE
+
+:test_heroku
+
+heroku config:set NODE_ENV=
+heroku config:set SSL=
+heroku config:set PORT=
+heroku config:set CACHE_SEGMENT=
+heroku config:set REDIS_HOST=
+heroku config:set REDIS_PORT=
+heroku config:set REDIS_USER=
+heroku config:set REDIS_PASSWORD=
+heroku config:set SQL_LOGGING=
+heroku config:set SCHEME=
+heroku config:set DB_USERNAME=
+heroku config:set DB_PASSWORD=
+heroku config:set DATABASE=
+heroku config:set DB_PORT=
+heroku config:set DB_HOST=
+heroku config:set DIALECT=
+heroku config:set SEEDER_STORAGE_TABLE_NAME=""
+heroku config:set JWT_SECRET=""
+heroku config:set COOKIE_SECRET=""
+heroku config:set DATABASE_URL=""
+
+ECHO %1
+
+GOTO DONE
+
+:prod_heroku
+
+heroku config:set NODE_ENV=
+heroku config:set SSL=
+heroku config:set PORT=
+heroku config:set CACHE_SEGMENT=
+heroku config:set REDIS_HOST=
+heroku config:set REDIS_PORT=
+heroku config:set REDIS_USER=
+heroku config:set REDIS_PASSWORD=
+heroku config:set SQL_LOGGING=
+heroku config:set SCHEME=
+heroku config:set DB_USERNAME=
+heroku config:set DB_PASSWORD=
+heroku config:set DATABASE=
+heroku config:set DB_PORT=
+heroku config:set DB_HOST=
+heroku config:set DIALECT=
+heroku config:set SEEDER_STORAGE_TABLE_NAME=""
+heroku config:set JWT_SECRET=""
+heroku config:set COOKIE_SECRET=""
+heroku config:set DATABASE_URL=""
+
+ECHO %1
+
+GOTO DONE
+
+:BLANK
+
+ECHO No Parameter
+
+GOTO DONE
+
+:UNKNOWN
+
+ECHO Unknown Option
+
+GOTO DONE
+
+:DONE
+
+ECHO Done!
+
+
