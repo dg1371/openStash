@@ -2,9 +2,6 @@
 var env = process.env.NODE_ENV || "development";
 console.log("======> Current ENV is: " + env);
 var config = require('./config/config.js')[env];
-
-console.log("sdfsdfsdfs" + config.SSL);
-
 var Joi = require("joi");
 var Hapi = require("hapi");
 var Inert = require("inert");
@@ -23,7 +20,6 @@ var path = require("path");
 var Handlebars = require("handlebars");
 
 
-var sqlLogging              = config.SQL_LOGGING;
 var redisHost               = config.REDIS_HOST;
 var redisPort               = config.REDIS_PORT;
 var redisUser               = config.REDIS_USER;
@@ -44,38 +40,18 @@ var JWT_SECRET           = config.JWT_SECRET;
 var COOKIE_SECRET        = config.COOKIE_SECRET;
 var scheme               = config.SCHEME;
 var serverPort           = config.PORT;
-var SSL1                  = config.SSL          || false;
-
-
-/*
-var sqlLogging              = process.env.SQL_LOGGING ||'false'
-var redisHost               = process.env.REDIS_HOST || "localhost";
-var redisPort               = process.env.REDIS_PORT || "";
-var redisUser               = process.env.REDIS_USER || "";
-var redisPasword            = process.env.REDIS_PASSWORD || "";
-var cacheSegment            = process.env.CACHE_SEGMENT || "openStash";
-var timerCacheSegment       = cacheSegment + "timer";
-var downtimeCacheSegment    = cacheSegment + "downtime";
-var dataCacheSegment        = cacheSegment + "data";
-
-var dbHost               = process.env.DB_HOST       || "localhost";
-//var dbHost               = process.env.DATABASE_URL   || "localhost";
-var Database             = process.env.DATABASE        || "openstash";
-var dbUser               = process.env.DB_USERNAME   || "test1";
-var dialect               = process.env.DIALECT       || "postgres";
-var dbPort               = process.env.DB_PORT       || "5432";
-var dbPassword           = process.env.DB_PASSWORD   || "openstash";
-var JWT_SECRET           = process.env.JWT_SECRET    || "luDN4bu9EZ2Ki7IaeyoOll+2Em9NiMR/2f9WUZhZIEnvabsdjWnTUEnCbmw0UJ9o80cSW4h9aAPMk2Qi4Q+MXWqP7wDQ1OI4jWlEpkgATMIlHhCaROPLRnHS4rY4Vsp2+u13QHymHIsySFKb85Qvs88xCjD1TV1k3HQgG2EwL+F/3aZVZfImaLmkeGi6JxnxKjKkvc5hIdbnBt3HBFaPmFda1Wvb7fmvuhrBwcUJn/s3q2D6NIOQFpjr3CdVxN9hDlygKB4zSdf1R2ONCyU2SMEcApqOE7oByGVTEAaF2QJa0F+hCe4Fvz+ktlqueQt2FPI3OgSkGuCL4djRfeTkrA==";
-var COOKIE_SECRET        = process.env.COOKIE_SECRET || "FxXMG60j0iveFgxUPC0NbgW7dvzeKyXjyU11c4hVYy+W2nzgDhaMrarREPZzvNcD8eu0Oqzd4QqcgNl5Ei5sj1y5wPgPxg4q/AmaphbCES9Lgjx71srUMOllykYtMAoEIPKPZn4+UbFvskM3aa999ZQ44c6PFe2bAG+fmIQuAihQFNvEdUI2/TgyKC3nfCCoILSnjXFcyaXxI5b5YQV3Umfrbj/KoLXZ6w6bpRjvprA4vJS01H7MI/kjyHAp+gPNtZ48h3B0skWYBQd/G0/0d8R4D+aFQzfXTWd6jzmeDLznxz1NbMbe6lBpaC/FxJj18OFr3LXSPZBjHHse0v9Q9Q==";
-var scheme               = process.env.SCHEME        || "http";
-var serverPort           = process.env.PORT          || 3000;
-var SSL                   = process.env.SSL           || false;
-
-*/
-
-//if (env=="development"){
-//   scheme="http";
-//}
+if (config.SSL) {
+    var SSL1  = true;
+}
+else {
+    var SSL1 = false;
+}
+if (config.SQL_LOGGING) {
+    var sqlLogging = true;
+}
+else {
+    var sqlLogging = false;
+}
 
 
 var hb = Handlebars.create();
@@ -167,7 +143,7 @@ var sequelizeOptions = {
    // dialect: config.database.dialect,
     port: dbPort,
     //port: config.database.port,
-   // logging: config.server.sqlLogging,
+    logging: sqlLogging,
     benchmark: true,
     pool: {
         min: 10,
