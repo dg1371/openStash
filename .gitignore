@@ -1,7 +1,6 @@
 # Node build artifacts
 node_modules
 npm-debug.log
-
 # Local development
 *.env
 *.dev
@@ -18,12 +17,8 @@ project.default.xml
 ui.lnf.xml
 vcs.xml
 .vs
-
-
 # Docker
 Dockerfile
 docker-compose.yml
 codestyles
 _windows
-
-
