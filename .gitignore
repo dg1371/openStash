@@ -22,3 +22,4 @@ Dockerfile
 docker-compose.yml
 codestyles
 _windows
+.idea/workspace.xml
