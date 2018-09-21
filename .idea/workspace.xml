@@ -2,9 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bce3b53b-f5ca-4d0d-b43f-fc7f5c1c8027" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.eslintrc.json" />
-      <change beforePath="$PROJECT_DIR$/.eslintignore" afterPath="$PROJECT_DIR$/.eslintignore" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" afterPath="$PROJECT_DIR$/.eslintrc.json" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/migrations/201705111816-craete-company.js" afterPath="$PROJECT_DIR$/migrations/201705111816-craete-company.js" />
+      <change beforePath="$PROJECT_DIR$/migrations/201705111952-create-userGroup.js" afterPath="$PROJECT_DIR$/migrations/201705111952-create-userGroup.js" />
+      <change beforePath="$PROJECT_DIR$/migrations/201705112002-create-user.js" afterPath="$PROJECT_DIR$/migrations/201705112002-create-user.js" />
+      <change beforePath="$PROJECT_DIR$/migrations/201706080001.js" afterPath="$PROJECT_DIR$/migrations/201706080001.js" />
+      <change beforePath="$PROJECT_DIR$/models/attachement.js" afterPath="$PROJECT_DIR$/models/attachement.js" />
+      <change beforePath="$PROJECT_DIR$/models/company.js" afterPath="$PROJECT_DIR$/models/company.js" />
+      <change beforePath="$PROJECT_DIR$/models/index.js" afterPath="$PROJECT_DIR$/models/index.js" />
+      <change beforePath="$PROJECT_DIR$/models/user.js" afterPath="$PROJECT_DIR$/models/user.js" />
+      <change beforePath="$PROJECT_DIR$/models/userGroup.js" afterPath="$PROJECT_DIR$/models/userGroup.js" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change beforePath="$PROJECT_DIR$/seeders/attachement.js" afterPath="$PROJECT_DIR$/seeders/attachement.js" />
+      <change beforePath="$PROJECT_DIR$/seeders/company.js" afterPath="$PROJECT_DIR$/seeders/company.js" />
+      <change beforePath="$PROJECT_DIR$/seeders/user.js" afterPath="$PROJECT_DIR$/seeders/user.js" />
+      <change beforePath="$PROJECT_DIR$/seeders/user_update.js" afterPath="$PROJECT_DIR$/seeders/user_update.js" />
+      <change beforePath="$PROJECT_DIR$/server/auth/index.js" afterPath="$PROJECT_DIR$/server/auth/index.js" />
+      <change beforePath="$PROJECT_DIR$/server/base/index.js" afterPath="$PROJECT_DIR$/server/base/index.js" />
+      <change beforePath="$PROJECT_DIR$/server/example/index.js" afterPath="$PROJECT_DIR$/server/example/index.js" />
+      <change beforePath="$PROJECT_DIR$/server/plugins/attachementPlugin.js" afterPath="$PROJECT_DIR$/server/plugins/attachementPlugin.js" />
+      <change beforePath="$PROJECT_DIR$/server/plugins/companyPlugin.js" afterPath="$PROJECT_DIR$/server/plugins/companyPlugin.js" />
+      <change beforePath="$PROJECT_DIR$/server/plugins/loginPlugin.js" afterPath="$PROJECT_DIR$/server/plugins/loginPlugin.js" />
+      <change beforePath="$PROJECT_DIR$/server/plugins/userPlugin.js" afterPath="$PROJECT_DIR$/server/plugins/userPlugin.js" />
+      <change beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
+      <change beforePath="$PROJECT_DIR$/www/js/loginController.js" afterPath="$PROJECT_DIR$/www/js/loginController.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="50">
-              <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+              <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -61,18 +84,28 @@
       <file leaf-file-name=".eslintrc.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.eslintrc.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="688">
+              <caret line="31" column="16" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".eslintignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name="herokuCommand" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/herokuCommand">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".eslintignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.eslintignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -93,16 +126,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="775">
               <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -167,9 +190,10 @@
         <option value="$PROJECT_DIR$/.setEnv.cmd" />
         <option value="$PROJECT_DIR$/config/config.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/herokuCommand" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/.eslintignore" />
+        <option value="$PROJECT_DIR$/.eslintrc.json" />
+        <option value="$PROJECT_DIR$/herokuCommand" />
       </list>
     </option>
   </component>
@@ -298,14 +322,7 @@
       <workItem from="1524667902045" duration="5321000" />
       <workItem from="1526914784501" duration="5822000" />
       <workItem from="1536610384131" duration="2888000" />
-      <workItem from="1537308644114" duration="5892000" />
-    </task>
-    <task id="LOCAL-00028" summary="init">
-      <created>1522522062047</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1522522062047</updated>
+      <workItem from="1537308644114" duration="7304000" />
     </task>
     <task id="LOCAL-00029" summary="init">
       <created>1522522438614</created>
@@ -643,11 +660,18 @@
       <option name="project" value="LOCAL" />
       <updated>1537495960847</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="init">
+      <created>1537497241021</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1537497241021</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157048000" />
+    <option name="totallyTimeSpent" value="158460000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -660,6 +684,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="12" y="9" width="2254" height="1445" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24988621" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.49840692" order="6" side_tool="false" content_ui="tabs" />
@@ -1010,14 +1035,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/herokuCommand">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1061,7 +1078,7 @@
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
-          <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -1082,18 +1099,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.eslintrc.json">
+    <entry file="file://$PROJECT_DIR$/.eslintignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="75">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.eslintignore">
+    <entry file="file://$PROJECT_DIR$/.eslintrc.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="688">
+          <caret line="31" column="16" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/herokuCommand">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           <folding />
         </state>
       </provider>

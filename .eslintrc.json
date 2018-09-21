@@ -28,5 +28,11 @@
             "error",
             "always"
         ]
-    }
+    },
+    "plugins": [
+        "security"
+    ],
+    "extends": [
+        "plugin:security/recommended"
+    ]
 }
