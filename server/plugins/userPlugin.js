@@ -1,7 +1,7 @@
 /**
  * Created by dan_g on 5/13/2017.
  */
-var bcrypt = require("bcrypt");
+var bcrypt = require("bcryptjs");
 var crypto = require("crypto");
 var Joi = require("joi");
 var Boom = require("boom");

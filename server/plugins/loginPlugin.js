@@ -4,7 +4,7 @@
 
 var Boom = require("boom");
 var Promise = require("bluebird");
-var bcrypt = require("bcrypt");
+var bcrypt = require("bcryptjs");
 var crypto = require("crypto");
 var Joi = require("joi");
 var jwt = require("jsonwebtoken");
