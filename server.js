@@ -52,6 +52,8 @@ var JWT_SECRET           = config.JWT_SECRET;
 var COOKIE_SECRET        = config.COOKIE_SECRET;
 var scheme               = config.SCHEME;
 var serverPort           = config.PORT;
+console.log("ENV PORT ===" +process.env.PORT+ "SERVERPORT ------- " + serverPort);
+
 if (config.SSL) {
 	var SSL1  = true;
 }
@@ -131,8 +133,7 @@ var server = new Hapi.Server(serverConfig);
 //});
 
 server.connection({
-	//port: process.env.PORT ||3000,
-    //port: 3000,
+	port: process.env.PORT||3000,
 	routes: {
 		cors: true,
 		files: {
