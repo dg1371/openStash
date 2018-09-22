@@ -131,7 +131,8 @@ var server = new Hapi.Server(serverConfig);
 //});
 
 server.connection({
-	port: process.env.PORT ||3000,
+	//port: process.env.PORT ||3000,
+    port: 3000,
 	routes: {
 		cors: true,
 		files: {
